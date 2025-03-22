@@ -24,13 +24,13 @@
   </head>
   <body>
     <!-- Header -->
-    <header id="main-header" class="">
+    <header id="main-header" class="desktop">
       <div class="announcementbar bg-black flex py-1">
-        <div class="w-full lg:w-3/5 text-center lg:text-right lg:pe-20">
+        <div class="w-full lg:w-3/5 text-center lg:text-right lg:pe-60">
           <p class="text-white text-sm">Free Shipping over order INR 1500/-</p>
         </div>
         <div class="hidden lg:flex items-center lg:w-2/5">
-          <p class="text-white text-sm">
+          <p class="text-white text-sm flex items-center">
             Welcome to Everything Mom Made
             <i class="fa-solid fa-user border-right px-4"></i>
           </p>
@@ -51,7 +51,9 @@
         </div>
       </div>
       <!-- Main Header -->
-      <nav class="bg-[#CCE5E2] px-5 flex justify-between items-center">
+      <nav
+        class="bg-[#CCE5E2] px-5 justify-between items-center hidden sm:flex"
+      >
         <div class="logo w-1/4">
           <img src="./Assets/logo.jpg" alt="Logo" class="w-28" />
         </div>
@@ -85,18 +87,76 @@
             </li>
           </ul>
         </div>
-        <div class="cards w-1/4 text-right">
-          <div class="search border-right relative">
+        <div class="cards w-1/4 text-right flex justify-center">
+          <div class="search relative border border-black px-1 py-[2px] me-5">
             <input
               type="search"
               name="search"
               placeholder="Search"
-              class="outline-none border-none"
+              class="outline-none border-none sm:w-24 xl:w-32"
             />
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
-          <div class="card-icon">
+          <div class="card-icon border-s border-black/60 ps-5">
             <i class="fa-solid fa-cart-shopping text-[#3FA89A]"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <nav class="bg-[#CCE5E2] py-2 md:py-4 sm:hidden">
+        <div class="container px-4 mx-auto md:flex md:items-center">
+          <div class="flex justify-between items-center">
+            <a href="#" class="font-bold text-xl text-indigo-600"
+              ><img src="./Assets/logo.jpg" alt="" class="w-24 h-24"
+            /></a>
+            <button
+              class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
+              id="navbar-toggle"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+
+          <div
+            class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0"
+            id="navbar-collapse"
+          >
+            <a
+              href="#"
+              class="p-2 lg:px-4 md:mx-2 text-white rounded bg-indigo-600"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"
+              >About</a
+            >
+            <a
+              href="#"
+              class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"
+              >Features</a
+            >
+            <a
+              href="#"
+              class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"
+              >Pricing</a
+            >
+            <a
+              href="#"
+              class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"
+              >Contact</a
+            >
+            <a
+              href="#"
+              class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-transparent rounded hover:bg-indigo-100 hover:text-indigo-700 transition-colors duration-300"
+              >Login</a
+            >
+            <a
+              href="#"
+              class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-solid border-indigo-600 rounded hover:bg-indigo-600 hover:text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1"
+              >Signup</a
+            >
           </div>
         </div>
       </nav>
@@ -249,7 +309,7 @@
     </section>
 
     <!-- self-care -->
-    <section id="self-care" class="relative">
+    <section id="self-care" class="relative mt-8">
       <div class="product-img absolute top-24 lg:left-[15%] xl:left-[18%]">
         <img src="./Assets/product.png" alt="" class="w-44 h-64" />
       </div>
@@ -370,7 +430,15 @@
     </section>
 
     <!-- Build Your Own Pack -->
-    <section id="custome-package" class="mb-10">
+    <section id="custome-package" class="mb-10 relative">
+      <div
+        class="left-leaf-wrapper absolute left-0 bottom-14 w-60 rotate-[103deg]"
+      >
+        <img src="./Assets/Leaf-Element-1.png" alt="" />
+      </div>
+      <div class="right-leaf-wrapper absolute right-0 top-0 w-60">
+        <img src="./Assets/Leaf-Element-2.png" alt="" />
+      </div>
       <!-- Heading -->
       <div
         class="w-full h-10 sm:h-16 xl:h-24 watermark-heading text-center relative"
@@ -603,6 +671,8 @@
       </div>
     </footer>
 
+    <!-- Tailwind JS -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Fontawesome JS CDN -->
