@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everything Mom Made</title>
+    <!-- Fontawesome CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="main-header" class="">
+      <div class="announcementbar bg-black flex py-1">
+        <div class="w-full lg:w-3/5 text-center lg:text-right lg:pe-20">
+          <p class="text-white text-sm">Free Shipping over order INR 1500/-</p>
+        </div>
+        <div class="hidden lg:flex items-center lg:w-2/5">
+          <p class="text-white text-sm">
+            Welcome to Everything Mom Made
+            <i class="fa-solid fa-user border-right px-4"></i>
+          </p>
+          <div class="social-icons flex gap-4 ps-4">
+            <div class="icon">
+              <img src="./Assets/Instagram.svg" alt="Instagram" class="w-5" />
+            </div>
+            <div class="icon">
+              <img src="./Assets/Facebook.svg" alt="Facebook" class="w-5" />
+            </div>
+            <div class="icon">
+              <img src="./Assets/LinkedIn.svg" alt="LinkedIn" class="w-5" />
+            </div>
+            <div class="icon">
+              <img src="./Assets/YouTube.svg" alt="YouTube" class="w-5" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main Header -->
+      <nav class="bg-[#CCE5E2] px-5 flex justify-between items-center">
+        <div class="logo w-1/4">
+          <img src="./Assets/logo.jpg" alt="Logo" class="w-28" />
+        </div>
+        <div class="nav w-1/2">
+          <ul class="nav-lists flex justify-between items-center gap-4">
+            <li class="nav-item showMenu">
+              <a href="#"> Shop <i class="fa-solid fa-caret-down"></i> </a>
+              <ul class="sub-nav-items hidden">
+                <li>
+                  <a href="#"> Demo 1 </a>
+                </li>
+                <li>
+                  <a href="#"> Demo 2 </a>
+                </li>
+                <li>
+                  <a href="#"> Demo 3 </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#"> Our Story </a>
+            </li>
+            <li class="nav-item">
+              <a href="#"> Blog </a>
+            </li>
+            <li class="nav-item">
+              <a href="#"> Press </a>
+            </li>
+            <li class="nav-item">
+              <a href="#"> Contact Us </a>
+            </li>
+          </ul>
+        </div>
+        <div class="cards w-1/4 text-right">
+          <div class="search border-right relative">
+            <input
+              type="search"
+              name="search"
+              placeholder="Search"
+              class="outline-none border-none"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="card-icon">
+            <i class="fa-solid fa-cart-shopping text-[#3FA89A]"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section id="hero">
+      <div class="slider-wrapper">
+        <div class="swiper myHeroSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide hero-bg-img relative">
+              <div
+                class="banner-info-wrapper w-full lg:w-96 h-auto absolute left-0 right-0 bottom-3 lg:top-1/3 lg:left-[68%] px-3 lg:px-0"
+              >
+                <p>
+                  Welcome goodness of Mom-Made at your doorstep. At Everything
+                  Mom-Made, we make Skin and Hair care made at home, packed with
+                  love at your doorstep. No chemicals, No Artificail fragrances,
+                  No unnecessary substances. Just pure goodness of natural
+                  ingredients.
+                </p>
+                <button class="text-white bg-black px-7 py-2 mt-5">
+                  Shop Now
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide hero-bg-img relative">
+              <div
+                class="banner-info-wrapper w-full lg:w-96 h-auto absolute left-0 right-0 bottom-3 lg:top-1/3 lg:left-[68%] px-3 lg:px-0"
+              >
+                <p>
+                  Welcome goodness of Mom-Made at your doorstep. At Everything
+                  Mom-Made, we make Skin and Hair care made at home, packed with
+                  love at your doorstep. No chemicals, No Artificail fragrances,
+                  No unnecessary substances. Just pure goodness of natural
+                  ingredients.
+                </p>
+                <button class="text-white bg-black px-7 py-2 mt-5">
+                  Shop Now
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide hero-bg-img relative">
+              <div
+                class="banner-info-wrapper w-full lg:w-96 h-auto absolute left-0 right-0 bottom-3 lg:top-1/3 lg:left-[68%] px-3 lg:px-0"
+              >
+                <p>
+                  Welcome goodness of Mom-Made at your doorstep. At Everything
+                  Mom-Made, we make Skin and Hair care made at home, packed with
+                  love at your doorstep. No chemicals, No Artificail fragrances,
+                  No unnecessary substances. Just pure goodness of natural
+                  ingredients.
+                </p>
+                <button class="text-white bg-black px-7 py-2 mt-5">
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best Sell Product -->
+    <section id="best-sell-product" class="py-10">
+      <div
+        class="w-full h-10 sm:h-16 xl:h-24 watermark-heading text-center relative"
+      >
+        <div class="watermark-info absolute left-0 right-0">
+          <h2 class="text-4xl lg:text-7xl text-[#CCE5E2] font-light">
+            Best Seller
+          </h2>
+        </div>
+        <div class="heading absolute left-0 right-0 top-2 lg:top-5">
+          <h4 class="text-lg lg:text-3xl font-semibold">Best Seller</h4>
+        </div>
+      </div>
+      <!-- Product Cards -->
+      <div class="product-bg-image w-full py-5">
+        <!-- Swiper -->
+        <div class="swiper bestProductSwiper w-3/5 mx-auto">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="product w-full xl:w-64 h-80 shadow-2xl p-5 text-center bg-[#f3f3f3]"
+              >
+                <div class="img">
+                  <img
+                    src="./Assets/product.png"
+                    alt="product 1"
+                    class="w-24 h-32 mx-auto mt-4"
+                  />
+                </div>
+                <p class="w-40 mt-5 text-xl font-semibold mx-auto">
+                  Oats & Turmeric Face Cleanser
+                </p>
+                <button class="bg-[#CCE5E2] px-6 py-2 mt-5">Buy Now</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="product w-full xl:w-64 h-80 shadow-2xl p-5 text-center bg-[#f3f3f3]"
+              >
+                <div class="img">
+                  <img
+                    src="./Assets/product.png"
+                    alt="product 1"
+                    class="w-24 h-32 mx-auto mt-4"
+                  />
+                </div>
+                <p class="w-40 mt-5 text-xl font-semibold mx-auto">
+                  Oats & Turmeric Face Cleanser
+                </p>
+                <button class="bg-[#CCE5E2] px-6 py-2 mt-5">Buy Now</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="product w-full xl:w-64 h-80 shadow-2xl p-5 text-center bg-[#f3f3f3]"
+              >
+                <div class="img">
+                  <img
+                    src="./Assets/product.png"
+                    alt="product 1"
+                    class="w-24 h-32 mx-auto mt-4"
+                  />
+                </div>
+                <p class="w-40 mt-5 text-xl font-semibold mx-auto">
+                  Oats & Turmeric Face Cleanser
+                </p>
+                <button class="bg-[#CCE5E2] px-6 py-2 mt-5">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- self-care -->
+    <section id="self-care" class="relative">
+      <div class="product-img absolute top-24 lg:left-[15%] xl:left-[18%]">
+        <img src="./Assets/product.png" alt="" class="w-44 h-64" />
+      </div>
+      <div
+        class="product-innfo absolute top-40 right-64 xl:right-96 text-center"
+      >
+        <h3 class="text-white text-3xl text-center">We're gender neutral</h3>
+        <p class="text-white text-xl font-medium text-center mt-1">
+          SelfCareHasNoGender
+        </p>
+        <button class="bg-[#CCE5E2] px-10 py-2 mt-5 mx-auto">Know More</button>
+      </div>
+    </section>
+
+    <!-- Our Story -->
+    <section id="our-story" class="py-10">
+      <div
+        class="w-full h-10 sm:h-16 xl:h-24 watermark-heading text-center relative"
+      >
+        <div class="watermark-info absolute left-0 right-0">
+          <h2 class="text-4xl lg:text-7xl text-[#CCE5E2] font-light">
+            Our Story
+          </h2>
+        </div>
+        <div class="heading absolute left-0 right-0 top-2 lg:top-5">
+          <h4 class="text-lg lg:text-3xl font-semibold">Our Story</h4>
+        </div>
+      </div>
+      <div
+        class="story-desc w-full lg:w-4/5 xl:w-3/5 px-4 py-5 lg:py-8 lg:px-0 flex flex-col lg:flex-row mx-auto"
+      >
+        <div class="w-full lg:w-1/2">
+          <img src="./Assets/Our-Story.jpg" alt="" />
+        </div>
+        <div
+          class="w-full lg:w-1/2 bg-white/60 shadow-sm px-8 py-2 lg:py-9 xl:py-12 2xl:py-20"
+        >
+          <p class="text-black text-sm">
+            <span class="text-[#52AFA3] text-xl font-semibold">
+              Everything Mom-Made is an initiative by a mother and her two
+              daughters from Jaipur.
+            </span>
+            With Ritu (Mom-Founder), is a flag bearer of 'keeping it natural and
+            homemade' Everything Mom-Made is a personal journey of Skincaare,
+            food & more from the creazy mother daughters trio who wnats to
+            spread the love warmth and goodness of Mom-Made with everyone who
+            either lives away from home or just wants to be in comfort on mommy
+            made at home.
+          </p>
+          <button class="text-white bg-black px-6 py-2 mt-5">Know More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Products -->
+    <section id="our-product" class="pb-10 xl:pb-14">
+      <div
+        class="w-full h-10 sm:h-16 xl:h-24 watermark-heading text-center relative"
+      >
+        <div class="watermark-info absolute left-0 right-0">
+          <h2 class="text-4xl lg:text-7xl text-[#CCE5E2] font-light">
+            Our Products
+          </h2>
+        </div>
+        <div class="heading absolute left-0 right-0 top-2 lg:top-5">
+          <h4 class="text-lg lg:text-3xl font-semibold">Our Products</h4>
+        </div>
+      </div>
+      <!-- Products -->
+      <div
+        class="products-cards w-full sm:w-3/5 px-4 py-4 mx-auto grid grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4"
+      >
+        <div class="product">
+          <div class="img-wrapper">
+            <img src="./Assets/product1.jpg" alt="" />
+          </div>
+          <div class="product-info border border-black text-center">
+            <p class="text-sm font-medium mt-5">Product Name</p>
+            <button class="bg-black text-white px-6 py-1 my-5 cursor-pointer">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="img-wrapper">
+            <img src="./Assets/product2.jpg" alt="" />
+          </div>
+          <div class="product-info border border-black text-center">
+            <p class="text-sm font-medium mt-5">Product Name</p>
+            <button class="bg-black text-white px-6 py-1 my-5 cursor-pointer">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="img-wrapper">
+            <img src="./Assets/product3.jpg" alt="" />
+          </div>
+          <div class="product-info border border-black text-center">
+            <p class="text-sm font-medium mt-5">Product Name</p>
+            <button class="bg-black text-white px-6 py-1 my-5 cursor-pointer">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="img-wrapper">
+            <img src="./Assets/product4.jpg" alt="" />
+          </div>
+          <div class="product-info border border-black text-center">
+            <p class="text-sm font-medium mt-5">Product Name</p>
+            <button class="bg-black text-white px-6 py-1 my-5 cursor-pointer">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Build Your Own Pack -->
+    <section id="custome-package" class="mb-10">
+      <!-- Heading -->
+      <div
+        class="w-full h-10 sm:h-16 xl:h-24 watermark-heading text-center relative"
+      >
+        <div class="watermark-info absolute left-0 right-0">
+          <h2 class="text-4xl lg:text-7xl text-[#CCE5E2] font-light">BYOR</h2>
+        </div>
+        <div class="heading absolute left-0 right-0 top-2 lg:top-5">
+          <h4 class="text-lg lg:text-3xl font-semibold">Build Your Own Pack</h4>
+        </div>
+      </div>
+      <!-- Pack degesin -->
+      <div class="package w-3/5 mx-auto text-center py-5 lg:py-10 xl:py-0">
+        <div class="icons grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+          <img src="./Assets/createdProduct1.jpg" alt="" />
+          <img src="./Assets/createdProduct2.jpg" alt="" />
+          <img src="./Assets/createdProduct3.jpg" alt="" />
+          <img src="./Assets/createdProduct2.jpg" alt="" />
+          <img src="./Assets/createdProduct4.jpg" alt="" />
+        </div>
+        <button class="bg-black text-white px-6 py-1 my-5 cursor-pointer">
+          Make Your Pack
+        </button>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="bg-[#FFEBE0] py-8">
+      <div class="w-full h-10 sm:h-16 watermark-heading text-center relative">
+        <div class="watermark-info absolute left-0 right-0">
+          <h2 class="text-4xl lg:text-7xl text-[#F4D7C9] font-light">
+            Testimonials
+          </h2>
+        </div>
+        <div class="heading absolute left-0 right-0 top-2 lg:top-5">
+          <h4 class="text-lg lg:text-3xl font-semibold">Testimonials</h4>
+        </div>
+      </div>
+
+      <!-- Swiper -->
+      <div class="swiper testimonialSwiper">
+        <div class="swiper-wrapper xl:py-10">
+          <div class="swiper-slide">
+            <!-- Feedback -->
+            <div
+              class="testimonial w-full sm:w-2/5 px-2 lg:px-0 mx-auto text-center"
+            >
+              <div class="icon">
+                <img
+                  src="./Assets/testimonial.jpg"
+                  alt=""
+                  class="w-12 h-12 mx-auto"
+                />
+              </div>
+              <div class="message">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium perspiciatis dolore at voluptas vitae nam nostrum
+                  alias natus repellat error quod nihil distinctio placeat ad
+                  tempora omnis, ratione iste temporibus provident magnam.
+                  Possimus, fuga?
+                </p>
+                <h6 class="author-name text-[#790127] text-sm font-medium mt-4">
+                  Customer Name
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <!-- Feedback -->
+            <div
+              class="testimonial w-full sm:w-2/5 px-2 lg:px-0 mx-auto text-center"
+            >
+              <div class="icon">
+                <img
+                  src="./Assets/testimonial.jpg"
+                  alt=""
+                  class="w-12 h-12 mx-auto"
+                />
+              </div>
+              <div class="message">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium perspiciatis dolore at voluptas vitae nam nostrum
+                  alias natus repellat error quod nihil distinctio placeat ad
+                  tempora omnis, ratione iste temporibus provident magnam.
+                  Possimus, fuga?
+                </p>
+                <h6 class="author-name text-[#790127] text-sm font-medium mt-4">
+                  Customer Name
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <!-- Feedback -->
+            <div
+              class="testimonial w-full sm:w-2/5 px-2 lg:px-0 mx-auto text-center"
+            >
+              <div class="icon">
+                <img
+                  src="./Assets/testimonial.jpg"
+                  alt=""
+                  class="w-12 h-12 mx-auto"
+                />
+              </div>
+              <div class="message">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium perspiciatis dolore at voluptas vitae nam nostrum
+                  alias natus repellat error quod nihil distinctio placeat ad
+                  tempora omnis, ratione iste temporibus provident magnam.
+                  Possimus, fuga?
+                </p>
+                <h6 class="author-name text-[#790127] text-sm font-medium mt-4">
+                  Customer Name
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination text-red-400"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-[#CCE5E2] py-4">
+      <div class="flex flex-col lg:flex-row px-10 py-7 gap-4">
+        <div class="w-full lg:w-1/5">
+          <div class="logo">
+            <img
+              src="./Assets/logo.jpg"
+              alt="Footer Logo"
+              class="w-28 lg:w-28 h-28 lg:h-28 mx-auto"
+            />
+          </div>
+        </div>
+        <div class="w-full lg:w-3/5 text-center">
+          <div class="newslatter">
+            <h6 class="text-lg font-medium mb-4">Subscribe Our Newslatter</h6>
+            <form
+              action="#"
+              class="flex justify-center flex-col lg:flex-row gap-4 w-full sm:w-96 mx-auto"
+            >
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Id"
+                class="outline-none border-none bg-white py-2 px-4"
+              />
+              <input
+                type="number"
+                name="phoneno"
+                placeholder="+91"
+                class="outline-none border-none bg-white py-2 px-4"
+              />
+              <input
+                type="submit"
+                value="Make Your Pack"
+                class="text-white text-sm bg-black py-[10px] px-5 cursor-pointer"
+              />
+            </form>
+          </div>
+          <div class="social-icon flex gap-4 justify-center mt-5">
+            <a href="#">
+              <img src="./Assets/Instagram.svg" alt="" class="w-8 h-8" />
+            </a>
+            <a href="#">
+              <img src="./Assets/Facebook.svg" alt="" class="w-8 h-8" />
+            </a>
+            <a href="#">
+              <img src="./Assets/LinkedIn.svg" alt="" class="w-8 h-8" />
+            </a>
+            <a href="#">
+              <img src="./Assets/YouTube.svg" alt="" class="w-8 h-8" />
+            </a>
+          </div>
+          <div class="footer-nav mt-4">
+            <ul class="nav-items flex justify-center gap-4">
+              <li>
+                <a href="#" class="text-xs font-medium">Our Story</a>
+              </li>
+              <li>
+                <a href="#" class="text-xs font-medium">Contact Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-xs font-medium">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/5">
+          <div class="contact flex flex-col gap-5 items-center lg:items-start">
+            <h6 class="text-lg font-medium">Contact Us</h6>
+            <p class="flex items-center gap-2 text-xs font-medium">
+              <img src="./Assets/Phone-Call.svg" alt="" class="w-4 h-4" />
+              +91 85297 40323
+            </p>
+            <p class="flex items-center gap-2 text-xs font-medium">
+              <img src="./Assets/Mail.svg" alt="" class="w-4 h-4" />
+              everythingmommade@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal-line bg-black w-5/6 h-[2px] mx-auto"></div>
+      <div
+        class="copy-and-privacy w-5/6 mx-auto flex justify-between items-center lg:items-start flex-col lg:flex-row gap-4 mt-4 lg:mt-0"
+      >
+        <div class="copy-right order-2 lg:order-2">
+          <p class="text-xs">
+            <span class="font-medium">&#169;</span>
+            2021 Everything Mom Made | Designed by Bridgekash International Pvt.
+            Ltd.
+          </p>
+        </div>
+        <div class="policy order-1 lg:order-2">
+          <ul class="flex gap-4">
+            <li>
+              <a href="#" class="text-xs">Return & Refund Policy </a>
+            </li>
+            <li>
+              <a href="#" class="text-xs">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#" class="text-xs">Privacy Policy </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Fontawesome JS CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+      integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Custom JS File -->
+    <script src="./JS/app.js"></script>
+  </body>
+</html>
